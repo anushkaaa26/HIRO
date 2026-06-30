@@ -1,0 +1,87 @@
+{
+    "name": "profile",
+    "primary_key_column": "id",
+    "enable_rls": true,
+    "visibility": "POD",
+    "columns": [{
+            "name": "full_name",
+            "type": "TEXT",
+            "required": true,
+            "max_length": 120
+        },
+        {
+            "name": "email",
+            "type": "TEXT",
+            "required": true,
+            "max_length": 200
+        },
+        {
+            "name": "phone",
+            "type": "TEXT",
+            "required": false,
+            "max_length": 30
+        },
+        {
+            "name": "headline",
+            "type": "TEXT",
+            "required": false,
+            "max_length": 200
+        },
+        {
+            "name": "skills",
+            "type": "JSON",
+            "required": false
+        },
+        {
+            "name": "experience",
+            "type": "TEXT",
+            "required": false,
+            "max_length": 5000
+        },
+        {
+            "name": "education",
+            "type": "TEXT",
+            "required": false,
+            "max_length": 5000
+        },
+        {
+            "name": "projects",
+            "type": "JSON",
+            "required": false
+        },
+        {
+            "name": "github",
+            "type": "TEXT",
+            "required": false,
+            "max_length": 300
+        },
+        {
+            "name": "linkedin",
+            "type": "TEXT",
+            "required": false,
+            "max_length": 300
+        },
+        {
+            "name": "portfolio",
+            "type": "TEXT",
+            "required": false,
+            "max_length": 300
+        },
+        {
+            "name": "target_roles",
+            "type": "JSON",
+            "required": false
+        },
+        {
+            "name": "preferred_locations",
+            "type": "JSON",
+            "required": false
+        },
+        {
+            "name": "resume_path",
+            "type": "FILE_PATH",
+            "required": false
+        }
+    ],
+    "config": {}
+}

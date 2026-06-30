@@ -1,0 +1,31 @@
+{
+    "name": "fit-scorer",
+    "description": "Scores resume against job description.",
+    "instruction": {
+        "$file": "instruction.md"
+    },
+    "toolsets": [
+        "POD"
+    ],
+    "visibility": "POD",
+    "permissions": {
+        "grants": [{
+                "resource_type": "datastore_table",
+                "resource_name": "profile",
+                "permission_ids": [
+                    "datastore.table.read",
+                    "datastore.record.read"
+                ]
+            },
+            {
+                "resource_type": "datastore_table",
+                "resource_name": "applications",
+                "permission_ids": [
+                    "datastore.table.read",
+                    "datastore.record.read",
+                    "datastore.record.write"
+                ]
+            }
+        ]
+    }
+}

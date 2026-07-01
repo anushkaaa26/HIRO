@@ -18,3 +18,6 @@ lemma pods import ./hiro             # upsert by resource name
 lemma pods describe
 lemma agents chat hello "what can you do in this pod?"
 ```
+
+
+

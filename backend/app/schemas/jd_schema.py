@@ -5,9 +5,6 @@ from typing import List, Optional
 class JDParseRequest(BaseModel):
     job_description: str
 
-
-
-
 class JDParseResponse(BaseModel):
     company: str
     role: str

@@ -24,6 +24,8 @@ lemma agent init <name>        # agents/<name>/<name>.json + instruction.md
 lemma workflow init <name>     # workflows/<name>/<name>.json
 ```
 
+
+
 ## Rules that bite
 - **Zero access by default.** Grant every table/folder/app an agent or function
   touches via `permissions.grants` in its JSON.
